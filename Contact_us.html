@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recipe List</title>
+    <link rel="shortcut icon" type="x-icon" href="icons/recipe.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- basic css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/collection.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+        <!-- header or navbar -->
+        <header>
+            <nav>
+                <ul class='nav-bar'>
+                    <li class='logo'><a href='index.html'><img src='icons/recipe.png' /></a></li>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                        <li><a href="include/Recipe_list.php">Recipe</a></li>
+                        <li><a href="https://cooking.nytimes.com/68861692-nyt-cooking/37282773-our-50-most-popular-recipes-of-2021">Trending</a></li>
+                        <li><a href="Kitchen_tips.html">Kitchen Tips</a></li>
+                        <li><a href="include/add.php">Submit Recipe</a></li>
+                        <li><a href="Contact_us.html">Contact Us</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <h3>Recipe Byte</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias dolorum similique
+                quia enim ipsa officia laboriosam velit magni ullam et, vel adipisci dolore quam! Quae doloribus
+                labore ex quas?</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+            </ul>
+        </div>
+        <div id="footer-copyright">
+            <p>&copy; 2023 RecipeBook. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
