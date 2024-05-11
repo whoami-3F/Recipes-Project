@@ -30,3 +30,15 @@ git clone https://github.com/whoami-3F/Recipes-Project.git
 
 By following these steps, you should be able to run your PHP, JavaScript, and CSS code locally for your "Recipes Project" and develop it further as needed.
 
+
+## Screenshots
+
+![front-page](project-screenshot/front-page.png)
+
+![search-page](project-screenshot/search-page.png)
+
+![Add-recipe](project-screenshot/Add-recipe.png)
+
+![contact-us](project-screenshot/contact-us.png)
+
+
